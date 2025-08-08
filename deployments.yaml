@@ -30,6 +30,6 @@ spec:
     app: online
   ports:
     - protocol: TCP
-      port: 8080  # Exposed port on the Service
-      targetPort: 8081  # Port inside the container (Tomcat)
-  type: LoadBalancer  # External acces
+      port: 8080         # Exposed port on the LoadBalancer
+      targetPort: 8081   # Port your container is listening on
+  type: LoadBalancer     # External access
